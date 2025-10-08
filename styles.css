@@ -27,8 +27,8 @@ body {
 .mozza {
    
     background-color: white;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 45%;
    
 }
@@ -62,4 +62,132 @@ body {
     grid-column: 5;
     grid-row: 2;
 }
+
+.olive {
+    background-color: olive;
+    height: 30px;
+    width: 40px;
+    border-radius: 100px / 60px ;
+}
+
+.o-1 {
+    grid-column: 4;
+    grid-row: -2;
+    z-index: 5;
+}
+
+.o-2 {
+    grid-column: 5;
+    grid-row: 4;
+    z-index: 5;
+}
+
+.o-3 {
+    grid-column: 4;
+    grid-row: 2;
+    z-index: 5;
+}
+
+.o-4 {
+    grid-column: 3;
+    grid-row: 4;
+    z-index: 5;
+}
+
+
+
+
+.ham {
+    background-color: palevioletred;
+    width: 2fr;
+    height: 1fr;
+    border-radius: 20px;
+}
+
+.h-1{
+    grid-column: 3/5;
+    grid-row: 2/2;
+    rotate: 20deg;
+
+}
+
+.h-2{
+    grid-column: 2/2;
+    grid-row: 4/6;
+    rotate: 330deg;
+    
+}
+
+.h-3{
+    grid-column: 4/6;
+    grid-row: 4/4;
+    rotate: 100deg;
+    
+}
+
+
+
+.mushroom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mu-1 {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background: #5d4737;;
+    border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+
+}
+
+ .mu-1::after{
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 30%;
+    width: 20px;
+    height: 20px;
+    background: #5d4737;
+    border-radius: 0 0 10px 10px;
+
+ }
+
+ .m-n1 {
+    grid-column: 3;
+    grid-row: 1;
+    rotate: 45deg;
+ }
+
+ .m-n2 {
+    grid-column: 2;
+    grid-row: 3;
+    rotate: 240deg;
+ }
+
+ .m-n3 {
+    grid-column: 5;
+    grid-row: 3;
+    rotate: 190deg;
+ }
+
+ .m-n4 {
+    grid-column: 2;
+    grid-row: 5;
+    rotate: 107deg;
+ }
+
+ .m-n5 {
+    grid-column: 4;
+    grid-row: 5;
+    rotate: 340deg;
+ }
+
+ .m-n6 {
+    grid-column: 6;
+    grid-row: 4;
+    rotate: 30deg;
+ }
+
 
