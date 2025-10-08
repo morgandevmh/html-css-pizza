@@ -1,3 +1,13 @@
+:root {
+    --tomato-base-color: radial-gradient(circle at 50% 50%, #d46363 0%, #c73d49 30%, #b92c2c 60%, #93161a 100%);
+    --mozza-color: radial-gradient(ellipse at 40% 30%, #ffffff 0%, #fef9e7 20%, #f8f3d8 50%, #e8ddb5 80%, #d4c5a0 100%);
+    --olive-color: radial-gradient(circle at 35% 35%, #a8c97f 0%, #749434 40%, #5a7c1f 70%, #3d5515 100%);
+    
+    --ham-color: radial-gradient(ellipse at 10% 30%, #ffb3ba 0%, #ff8fa3 30%, #e85d75 60%, #c74258 100%);
+    --mushroom-color:
+    linear-gradient(180deg, #907255 0%, #63452e 60%, #5a351e 100%);
+}
+
 * {
     margin: 0;
     padding:0;
@@ -7,28 +17,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(77, 79, 79);
-    padding-top: 150px;
+    background-color: rgb(161, 161, 161);
+    padding-top: 120px;
 }
 
 .base {
     height: 500px;
     width: 500px;
-    background-color: tomato;
+    background: var(--tomato-base-color);
     border-radius: 50%;
-    border: 15px solid rgb(231, 231, 164);
+    border: 15px solid rgb(217, 211, 143);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    box-shadow:
+    inset 0 0 1em ,
+    15px 30px 1em rgba(0, 0, 0, 0.6) ;
 
 
 }
 
 .mozza {
    
-    background-color: white;
-    height: 50px;
-    width: 50px;
+    background: var(--mozza-color);
+    height: 80px;
+    width: 80px;
     border-radius: 45%;
    
 }
@@ -50,7 +63,7 @@ body {
 
 .m-4 {
     grid-column: 3;
-    grid-row: 6;
+    grid-row: 5;
 }
 
 .m-5 {
@@ -64,7 +77,7 @@ body {
 }
 
 .olive {
-    background-color: olive;
+    background: var(--olive-color);
     height: 30px;
     width: 40px;
     border-radius: 100px / 60px ;
@@ -98,7 +111,7 @@ body {
 
 
 .ham {
-    background-color: palevioletred;
+    background: var(--ham-color);
     width: 2fr;
     height: 1fr;
     border-radius: 20px;
@@ -131,13 +144,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 .mu-1 {
     position: relative;
     width: 50px;
     height: 30px;
-    background: #5d4737;;
+    background: var(--mushroom-color);
     border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
 
 }
@@ -149,7 +163,7 @@ body {
     left: 30%;
     width: 20px;
     height: 20px;
-    background: #5d4737;
+    background: var(--mushroom-color);
     border-radius: 0 0 10px 10px;
 
  }
